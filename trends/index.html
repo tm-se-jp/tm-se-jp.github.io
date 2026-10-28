@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ゲーム市場トレンド | 株式会社ＴＭソフトウェアエンジニアリング</title>
+<style>
+  :root { --fg:#1f2328; --muted:#59636e; --bg:#ffffff; --line:#d1d9e0; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6edf3; --muted:#9198a1; --bg:#0d1117; --line:#30363d; } }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif; line-height:1.8; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 8px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+  p, li { font-size: 0.97rem; }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  code { overflow-wrap: anywhere; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ゲーム市場トレンド</h1>
+  <p class="meta">株式会社ＴＭソフトウェアエンジニアリング（TM Software Engineering Co., Ltd.）が運用する社内向けツール</p>
+
+  <h2>概要</h2>
+  <p>「ゲーム市場トレンド」は、ゲーム市場の公開データを毎日収集・集計し、当社の役職員および当社が利用を許可した方が市場の動きを確認するためのツールです。一般の利用者向けには提供していません。</p>
+
+  <h2>主な機能</h2>
+  <ul>
+    <li>Steam の売上上位・週間プレイ人数・月間トップリリース、ファミ通の国内家庭用ソフト週間販売、ゲーム系ニュースサイトの記事を毎日収集し、履歴として蓄積します</li>
+    <li>総合・インディー・クラフトサバイバルの区分ごとに、順位の推移と話題を一覧できるページを提供します</li>
+    <li>AI（Google の Gemini）が、集計結果とニュースをもとに日本語の解説を作成します</li>
+    <li>AI アシスタント（Anthropic 社の Claude）のカスタムコネクタから、集計結果を参照できます（MCP サーバー <code>https://trends.tm-se.co.jp/mcp</code>）</li>
+  </ul>
+
+  <h2>Google アカウントの利用</h2>
+  <p>AI アシスタントから本ツールに接続する際は、Google アカウントでログインします。本ツールが Google から受け取るのはメールアドレスなどログインに必要な情報だけで、利用を許可された方であるかの確認と、データの再収集を依頼した方の確認にのみ使用します。Gmail、カレンダー、ドライブなどの情報にはアクセスしません。詳しくはプライバシーポリシーをご覧ください。</p>
+
+  <h2>関連文書</h2>
+  <ul>
+    <li><a href="/privacy/trends/">ゲーム市場トレンド プライバシーポリシー</a></li>
+    <li><a href="/terms/">利用規約</a></li>
+  </ul>
+
+  <h2>お問い合わせ</h2>
+  <p>株式会社ＴＭソフトウェアエンジニアリング<br>メール：info@tm-se.co.jp</p>
+
+  <footer>
+    <a href="/">株式会社ＴＭソフトウェアエンジニアリング</a>
+  </footer>
+</main>
+</body>
+</html>
